@@ -1,0 +1,15 @@
+/* color primario: #ED21D0
+color secundario: #EF3721
+color terciario: #ED2156
+color cuarto: #BA21ED */
+body{background-color: aquamarine;}
+h2{color: #EF3721;}
+.menu{font-size: 30px;}
+.menu{color: #ED21D0;}
+.menu{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+.formulario{font-size: 20px;}
+.formulario{color: #ED2156;}
+.formulario{ font-family: Arial, Helvetica, sans-serif;}
+.de-donde-sos{font-size: 25px;}
+.de-donde-sos{color: #BA21ED;}
+.de-donde-sos{font-family: ;}
