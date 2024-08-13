@@ -2,14 +2,16 @@
 color secundario: #EF3721
 color terciario: #ED2156
 color cuarto: #BA21ED */
-body{background-color: aquamarine;}
+body{background-color: rgba(127, 255, 212, 0.534);}
 h2{color: #EF3721;}
-.menu{font-size: 30px;}
-.menu{color: #ED21D0;}
-.menu{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
-.formulario{font-size: 20px;}
-.formulario{color: #ED2156;}
-.formulario{ font-family: Arial, Helvetica, sans-serif;}
-.de-donde-sos{font-size: 25px;}
-.de-donde-sos{color: #BA21ED;}
-.de-donde-sos{font-family: ;}
+h3{color: blueviolet; font-family: brodway; font-size: 20px;}
+.menu{font-size: 30px; color: #ED21D0; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+.formulario{font-size: 20px; color: #ED2156; font-family: Arial, Helvetica, sans-serif; background-color: rgb(228, 237, 241);}
+.de-donde-sos{font-size: 20px; color: #010611; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.texto{font-family: papyrus;}
+.pie{background-color: rgb(218, 208, 208);}
+.cabeza{background-color: rgb(245, 244, 242);}
+.clima{background-color: #EF3721;}
+.titulo{background-color: rgba(235, 232, 231, 0.527);}
+.subtitulo{text-decoration: underline;}
+.contame{background-color: rgb(237, 241, 241)}
