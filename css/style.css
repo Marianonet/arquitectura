@@ -8,8 +8,10 @@ body{
 h1{ 
     padding: 1px; 
     margin-bottom: 5px;
+    color: #ED21D0;
 }
 h2{ 
+    text-decoration: underline;
     color: #EF3721;}
 h3{ 
     color: blueviolet; 
@@ -23,22 +25,23 @@ h3{
     margin-left: 60px;
     margin-right: 60px;
     text-align: center;
-    color: #ED21D0;
 }
-.paginas{
-    border: 2px black solid;
-    padding: 0px;
-}
-
 .menu{ 
     background-image: url(..//img/herramientas.jpg); background-size: cover; background-repeat: no-repeat;
-    font-size: 15px; 
-    color: #ED21D0; 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 10px; 
+    font-family: 'Courier New', Courier, monospace;
     list-style-type: none;
-    padding: 1em;
+    padding: 0;
     border: 2px solid black;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.menu a{ color: #ED2156;}
+.menu li{
+    border: 2px black solid;
+    padding: 0px;
 }
 .formulario{ 
     font-size: 15px; 
@@ -50,29 +53,11 @@ h3{
     margin-top: 10px;
     margin-right: 100px;
     }
-    .datos{width: 200px;}
-.donde{ 
-    margin: 10px;
-    font-size: 15px; 
-    color: #010611; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.formulario input{
+    width: 200px;
 }
-.texto{ 
-    font-family: papyrus;}
-.pie{ 
-    background-color: rgb(218, 208, 208); 
-    border: 3px red dotted;
-}
-.cabeza{ 
-    background-color: rgb(245, 244, 242);
-}
-.clima 
-{background-color: #EF3721;
-}
-.subtitulo{ 
-    text-decoration: underline;
-    margin-bottom: 0px;
-    color: #EF3721;
+.formulario textarea{
+    width: 200px;
 }
 .contame{ 
     /* border: 2px black solid ;  */
@@ -82,6 +67,36 @@ h3{
     margin-right: 110px;
     background-color: rgb(237, 241, 241)
 }
+.contame select{ 
+    margin: 10px;
+    font-size: 15px; 
+    color: #010611; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.texto{ 
+    font-family: papyrus;
+    color: #ED2156;
+}
+.pie{ 
+    background-color: rgb(218, 208, 208); 
+    padding: 0px;
+    border: 2px solid black;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pie li{
+    border: 2px black solid;
+    padding: 0px;
+    margin-right: 230px;
+}
+.pie a{color: blue;
+}
+.clima{
+    background-color: #EF3721;
+    margin-bottom: 10px;
+}
 .obras {
     background-image: url(../img/obra.jpg); 
     background-size: cover; 
@@ -89,8 +104,10 @@ h3{
     width: 325px; height: 300px;
     margin: 10px;
 }
-
-/* .contenedor{width: 50%; height: 90vh; margin: auto;background-color: blue;}
-.caja-1{background-color: turquoise; width: 70%; height: 70vh;}
-.caja-2{background-color: violet; width: 50%; height: 50vh;}
-.caja-3{background-color: green; width: 60%; height: 40vh;} */
+@media (min-width: 900px){
+    .menu{
+        height: 100px;
+        font-size: 20px;
+    }
+    .menu li{ padding-top: 30px;}
+    }
