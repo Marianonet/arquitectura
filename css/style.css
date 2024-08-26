@@ -5,53 +5,82 @@ color cuarto: #BA21ED */
 body{
     background-color: rgba(127, 255, 212, 0.534);
 }
+/* .fondo{background-attachment: fixed; background-position: center; background-size: contain;} */
+.logo{
+    width: 50px;
+    height: 50px;}
 h1{ 
     padding: 1px; 
     margin-bottom: 5px;
     color: #ED21D0;
 }
-h2{ 
+/* h2{ 
     text-decoration: underline;
-    color: #EF3721;}
+    color: #EF3721;} */
 h3{ 
-    color: blueviolet; 
+    /* color: blueviolet;  */
     font-family: brodway; 
     font-size: 15px;
     margin-top: 10px;
-    margin-bottom: 10px; 
+    margin-bottom: 7px; 
 }
-.titulo{ 
-    background-color: rgba(235, 232, 231, 0.527);
-    margin-left: 60px;
-    margin-right: 60px;
+.titulo{
+    color: #ED21D0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.subtitulo{
     text-align: center;
+    background-color: #010611;
+    color: white;
+    padding: 1.2em .5em;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 0;
+    text-align: center;}
+.subtitulo2{
+        text-align: center;
+        background-color: #010611;
+        color: white;
+        padding: 1.2em .5em;
+        border: 1px solid grey;
+        border-radius: 10px;
+        margin: 0;
+        text-align: center;
 }
 .menu{ 
-    background-image: url(..//img/herramientas.jpg); background-size: cover; background-repeat: no-repeat;
-    font-size: 10px; 
-    font-family: 'Courier New', Courier, monospace;
+    background-image: url(..//img/herramientas.jpg); background-size: cover;
+    background-position: top;
+    font-size: 20px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     list-style-type: none;
+    width: 100%;
+    height: 20%;
     padding: 0;
-    border: 2px solid black;
+    border: 2px solid rgb(149, 132, 132);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 }
-.menu a{ color: #ED2156;}
+.menu a{ color: rgb(13, 6, 223);
+}
 .menu li{
     border: 2px black solid;
     padding: 0px;
 }
 .formulario{ 
     font-size: 15px; 
-    color: #ED2156; 
+    color: white; 
     font-family: brodway; 
-    background-color: rgb(228, 237, 241);
+    background-color: black;
     /* border: 2px black solid;  */
     padding: 1em; 
     margin-top: 10px;
-    margin-right: 100px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 10px;
     }
 .formulario input{
     width: 200px;
@@ -61,33 +90,49 @@ h3{
 }
 .contame{ 
     /* border: 2px black solid ;  */
-    padding: 0px; 
+    color: white;
+    width: 200px;
+    padding: 1em;
+    border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 30px; 
-    margin-right: 110px;
-    background-color: rgb(237, 241, 241)
+    background-color: black
 }
 .contame select{ 
-    margin: 10px;
+    margin: 5px;
     font-size: 15px; 
     color: #010611; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.texto{ 
-    font-family: papyrus;
-    color: #ED2156;
+.contame textarea{margin-bottom: 5px;
 }
-.pie{ 
-    background-color: rgb(218, 208, 208); 
+.texto{
+    background-color: #010611;
+    color: white;
+    padding: 1em;
+    /* border: 1px solid grey; */
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.texto li{
+    list-style-type: none;
+}
+.imagen{width: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.footer{margin-right: 150px;}
+.pie{
+    /* border: 2px solid rgb(198, 181, 181); */
     padding: 0px;
-    border: 2px solid black;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .pie li{
-    border: 2px black solid;
+    /* border: 2px black solid; */
     padding: 0px;
     margin-right: 230px;
 }
@@ -95,7 +140,13 @@ h3{
 }
 .clima{
     background-color: #EF3721;
-    margin-bottom: 10px;
+    padding: 1em;
+    /* border: 1px solid grey; */
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-size: 1.5em;
 }
 .obras {
     background-image: url(../img/obra.jpg); 
@@ -104,10 +155,47 @@ h3{
     width: 325px; height: 300px;
     margin: 10px;
 }
-@media (min-width: 900px){
+.cuerpo{
+    display: grid;
+    gap: 1em;
+}
+.imagenes{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+@media (min-width: 500px){
     .menu{
-        height: 100px;
+        height: 120px;
         font-size: 20px;
     }
-    .menu li{ padding-top: 30px;}
+    .titulo{color: #010611;}
+    .menu li{ padding-top: 35px;}
+    .cuerpo{
+        grid-template-columns: 1fr 1fr 1fr;
     }
+    .cuerpo2{
+        grid-template-columns: 1fr 1fr;
+    }
+    .contame{
+        width: 100%;
+    }
+    .formulario{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .clima{
+        width: 100%;
+    }
+    .subtitulo{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .subtitulo2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}

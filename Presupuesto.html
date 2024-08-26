@@ -11,15 +11,16 @@
     <header class="cabeza">
    <nav>
         <h2> <ul class="menu">
-               <li><a href="un-poco-de-nosotros.html" >Un poco de nosotros</a></li>
-               <li><a href="nuestra-filosofia.html" >Nuestra Filosofía</a></li>
-               <li><a href="obras-terminadas.html" >Obras terminadas</a></li>
-               <li><a href="Presupuesto.html">Pedí tu Presupuesto</a></li>
+            <li><a href="un-poco-de-nosotros.html" >NOSOTROS</a></li>
+            <li><a href="nuestra-filosofia.html" >NUESTRA FILOSOFIA</a></li>
+            <li><a href="obras-terminadas.html" >OBRAS</a></li>
+            <li><a href="Presupuesto.html">PRESUPUESTOS</a></li>
     </ul></h2>
    </nav>
     </header>
     <main>
-        <h2>Pedí tu presupuesto</h2>
+        <div class="cuerpo2">
+        <h2 class="subtitulo2">Pedí tu presupuesto</h2>
         <form action="" method="get" class="formulario">
             <label for="nombre">Tu Nombre</label> <br>
             <input type="text" maxlength="50" minlength="10" name="nombre"> <br>
@@ -33,7 +34,7 @@
             <textarea name="consulta" id=""></textarea> <br>
             <input type="submit" value="Enviar Consulta" id="">
         </form>
-            <h2>Contanos de donde sos</h2>
+            <h2 class="subtitulo2">Contanos de donde sos</h2>
             <div class="contame">
             <h3>-Seleccioná tu país de orígen:</h3>
         <select name="Pais" id="" >
@@ -43,35 +44,36 @@
             <option value="Chi">Chile</option>
             <option value="Bra">Brasil</option>
         </select>
-       <h3>-Seleccioná tu Provincia(Sólo si sos de Argentina):</h3>
-    <select name="Provincia" id="" >
-         <option value="">Selecioná una opción</option>
-         <option value="buenos-aires">Buenos Aires</option>
-         <option value="cordoba">Córdoba</option>
-         <option value="santafe">Santa Fe</option>
-         <option value="mendoza">Mendoza</option>
-         <option value="entre-rios">Entre Rios</option>
-         <option value="corrientes">Corrientes</option>
-         <option value="misiones">Misiones</option>
-         <option value="chaco">Chaco</option>
-         <option value="santiago">Santiago del Estero</option>
-         <option value="tierra-del-fuego">Tierra del Fuego</option>
-         <option value="la-pampa">La Pampa</option>
-         <option value="san-luis">San Luis</option>
-         <option value="catamarca">Catamarca</option>
-         <option value="santa-cruz">Santa Cruz</option>
-         <option value="tucuman">Tucuman</option>
-         <option value="salta">Salta</option>
-         <option value="jujuy">Jujuy</option>
-         <option value="rio-negro">Rio Negro</option>
-         <option value="neuquen">Neuquen</option>
-         <option value="chubut">Chubut</option>
-         <option value="formosa">Formosa</option>
-         <option value="larioja">La Rioja</option>
+    <h3>-Seleccioná tu Provincia(Sólo si sos de Argentina):</h3>
+        <select name="Provincia" id="" >
+            <option value="">Selecioná una opción</option>
+            <option value="buenos-aires">Buenos Aires</option>
+            <option value="cordoba">Córdoba</option>
+            <option value="santafe">Santa Fe</option>
+            <option value="mendoza">Mendoza</option>
+            <option value="entre-rios">Entre Rios</option>
+            <option value="corrientes">Corrientes</option>
+            <option value="misiones">Misiones</option>
+            <option value="chaco">Chaco</option>
+            <option value="santiago">Santiago del Estero</option>
+            <option value="tierra-del-fuego">Tierra del Fuego</option>
+            <option value="la-pampa">La Pampa</option>
+            <option value="san-luis">San Luis</option>
+            <option value="catamarca">Catamarca</option>
+            <option value="santa-cruz">Santa Cruz</option>
+            <option value="tucuman">Tucuman</option>
+            <option value="salta">Salta</option>
+            <option value="jujuy">Jujuy</option>
+            <option value="rio-negro">Rio Negro</option>
+            <option value="neuquen">Neuquen</option>
+            <option value="chubut">Chubut</option>
+            <option value="formosa">Formosa</option>
+            <option value="larioja">La Rioja</option>
     </select>
-         <label for="cuidad" ><h3>-Escribí tu ciudad:</h3></label>
-         <textarea name="ciudad" id=""></textarea> <br>
-    <input type="submit" name="Enviar Datos" id="">
+         <label for="cuidad" ><h3>-Escribí tu ciudad:</h3></label><br>
+         <textarea name="ciudad" id=""></textarea><br>
+    <input type="submit" name="Enviar Datos" id="enviar">
+    </div>
     </div>
     </main>
     <footer>    
