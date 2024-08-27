@@ -64,11 +64,17 @@ h3{
     flex-direction: row;
     justify-content: center;
 }
+.menu li:hover{
+    cursor: pointer;
+    transition: 2000ms;
+}
 .menu a{ color: rgb(13, 6, 223);
 }
 .menu li{
     border: 2px black solid;
     padding: 0px;
+    border-radius: 10px;
+    margin: 5px;
 }
 .formulario{ 
     font-size: 15px; 
@@ -77,10 +83,11 @@ h3{
     background-color: black;
     /* border: 2px black solid;  */
     padding: 1em; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 200px;
+    margin: 10px;
+    width: 100%;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     }
 .formulario input{
     width: 200px;
@@ -91,11 +98,10 @@ h3{
 .contame{ 
     /* border: 2px black solid ;  */
     color: white;
-    width: 200px;
+    width: 100%;
     padding: 1em;
     border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 30px; 
+    margin: 10px;
     background-color: black
 }
 .contame select{ 
@@ -114,9 +120,13 @@ h3{
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+    overflow: hidden;
 }
 .texto li{
     list-style-type: none;
+}
+.texto:hover img{
+    scale: 1.15;
 }
 .imagen{width: 100px;
     margin-top: 5px;
@@ -140,20 +150,14 @@ h3{
 }
 .clima{
     background-color: #EF3721;
+    width: 100%;
     padding: 1em;
     /* border: 1px solid grey; */
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-right: 5px;
     font-size: 1.5em;
-}
-.obras {
-    background-image: url(../img/obra.jpg); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    width: 325px; height: 300px;
-    margin: 10px;
+    text-align: center;
 }
 .cuerpo{
     display: grid;
@@ -164,7 +168,24 @@ h3{
     max-height: 300px;
     object-fit: cover;
     border-radius: 10px;
+    transition: 1s scale;
 }
+.texto:hover{
+    background-color: gray;
+    color: rgb(15, 1, 1);
+    cursor: pointer;
+    transition: 2000ms;
+    transition-property: all;
+    box-shadow: -10px 10px 10px black;
+}
+.clima:hover{
+        background-color: gray;
+        color: rgb(15, 1, 1);
+        cursor: pointer;
+        transition: 2000ms;
+        transition-property: all;
+        box-shadow: 10px 10px 10px red inset;
+    }
 @media (min-width: 500px){
     .menu{
         height: 120px;
@@ -183,9 +204,6 @@ h3{
     }
     .formulario{
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
     }
     .clima{
         width: 100%;
