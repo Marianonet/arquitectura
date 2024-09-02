@@ -2,18 +2,19 @@
 color secundario: #EF3721
 color terciario: #ED2156
 color cuarto: #BA21ED */
-body{
+*{text-decoration: none;}
+/* body{
     background-color: rgba(127, 255, 212, 0.534);
-}
+} */
 /* .fondo{background-attachment: fixed; background-position: center; background-size: contain;} */
 .logo{
-    width: 50px;
-    height: 50px;}
-h1{ 
+    width: 300px;
+    height: 100px;}
+/* h1{ 
     padding: 1px; 
     margin-bottom: 5px;
     color: #ED21D0;
-}
+} */
 /* h2{ 
     text-decoration: underline;
     color: #EF3721;} */
@@ -25,7 +26,7 @@ h3{
     margin-bottom: 7px; 
 }
 .titulo{
-    color: #ED21D0;
+    color: black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -50,15 +51,15 @@ h3{
         text-align: center;
 }
 .menu{ 
-    background-image: url(..//img/herramientas.jpg); background-size: cover;
+    /* background-image: url(..//img/herramientas.jpg); background-size: cover; */
     background-position: top;
     font-size: 20px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     list-style-type: none;
     width: 100%;
     height: 20%;
-    padding: 0;
-    border: 2px solid rgb(149, 132, 132);
+    padding: 20px;
+    /* border: 2px solid rgb(149, 132, 132); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -68,7 +69,7 @@ h3{
     cursor: pointer;
     transition: 2000ms;
 }
-.menu a{ color: rgb(13, 6, 223);
+.menu a{ color: black;
 }
 .menu li{
     border: 2px black solid;
@@ -115,11 +116,11 @@ h3{
 .texto{
     background-color: #010611;
     color: white;
+    width: 100%;
     padding: 1em;
     /* border: 1px solid grey; */
     border-radius: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 10px;
     overflow: hidden;
 }
 .texto li{
@@ -134,19 +135,39 @@ h3{
 }
 .footer{margin-right: 150px;}
 .pie{
-    /* border: 2px solid rgb(198, 181, 181); */
-    padding: 0px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
 }
-.pie li{
-    /* border: 2px black solid; */
-    padding: 0px;
-    margin-right: 230px;
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
 }
-.pie a{color: blue;
+.item{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    margin: 5px;
+}
+.item img{
+    width: 50px;
+    height: 50px;
+}
+.social-icons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+.social-icons img{
+    width: 40px;
+    height: 40px;
 }
 .clima{
     background-color: #EF3721;
@@ -154,13 +175,14 @@ h3{
     padding: 1em;
     /* border: 1px solid grey; */
     border-radius: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 10px;
     font-size: 1.5em;
     text-align: center;
 }
 .cuerpo{
     display: grid;
+    justify-content: center;
+    text-align: center;
     gap: 1em;
 }
 .imagenes{
@@ -186,7 +208,7 @@ h3{
         transition-property: all;
         box-shadow: 10px 10px 10px red inset;
     }
-@media (min-width: 500px){
+@media (min-width: 992px){
     .menu{
         height: 120px;
         font-size: 20px;
@@ -215,5 +237,15 @@ h3{
     .subtitulo2{
         grid-column-start: 1;
         grid-column-end: 2;
+    }
+    .pie{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .social-icons{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 35%;
+        margin-left: 150px;
     }
 }
