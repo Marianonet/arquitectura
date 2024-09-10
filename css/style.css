@@ -10,11 +10,12 @@
     border: 1px solid black;
 }
 h3{
-    display: flex;
+    /* display: flex;
     justify-content: left;
     align-items: center;
-    padding: 0.5em;
-    
+    padding: 0.5em; */
+    width: 80%;
+    height: 30px;
 }
 .subtitulo{
     text-align: center;
@@ -65,10 +66,12 @@ h3{
         font-size: 21px;
     }
 .formulario input{
-    width: 200px;
+    width: 80%;
+    height: 30px;
 }
 .formulario textarea{
-    width: 200px;
+    width: 80%;
+    height: 30px;
 }
 .contame{ 
     display: flex;
@@ -82,18 +85,24 @@ h3{
     
 }
 .contame select{ 
+    width: 80%;
+    height: 30px;
     margin: 5px;
     font-size: 15px; 
     color: #010611; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.contame textarea{margin-bottom: 5px;
+.contame textarea{
+    width: 80%;
+}
+#enviar-datos{
+    width: 80%;
+    height: 30px;
 }
 .texto{
     background-color: rgba(7, 29, 49, 0.788);
     color: white;
     padding: 1em;
-    /* border: 1px solid grey; */
     border-radius: 10px;
     margin: 10px;
     overflow: hidden;
