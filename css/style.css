@@ -59,6 +59,7 @@ h3{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     }
 .formulario label{
         font-size: 21px;
@@ -70,13 +71,15 @@ h3{
     width: 200px;
 }
 .contame{ 
-    /* font-size: 21px; */
-    /* border: 2px black solid ;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
     padding: 1em;
     border-radius: 10px;
     margin: 10px;
     background-color: rgba(7, 29, 49, 0.788);
+    
 }
 .contame select{ 
     margin: 5px;
