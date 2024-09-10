@@ -45,11 +45,12 @@
 //     console.log("resultado " +   opera +  -opera2 + -opera3 + -opera4)
 // }
 // operatoria(10,5)
+
 // function area(radio){
-//     let pi= 3.14
+//     const pi= 3.14
 //     let cuadrado= radio * radio
 //     let resultado= pi * cuadrado
-//     console.log( "El área de un círculo con radio " + radio + "mm es igual a " + resultado + "mm²")
+//     console.log( "El área de un círculo de radio " + radio + "mm es igual a " + resultado + "mm²")
 // }
 // area(10)
 
@@ -63,7 +64,7 @@
 //         alert("el cuadrado es " + cuadrado)
 // }
 // }
-// calcularCuadrado(5)
+// calcularCuadrado(30)
 
 // function usuario(nombre){
 //     if(nombre!="pablo"){
@@ -120,7 +121,7 @@
 // console.log(saludo)
 
 // let refMyText=document.querySelector("#MyText")
-// refMyText.innerHTML="texto ingresado en el div"
+
 
 // function mostrarTexto(){
 //     refMyText.innerHTML="texto mostrado en el div"
@@ -130,7 +131,7 @@
 // const outputText=document.querySelector("#salida-saludo")
 // function saludar(){
 //     if(inputName.value!=""){
-//     const saludoCompleto="hola, me llamo Jarvis..un placer conocerte" + inputName.value
+//     const saludoCompleto="Hola, me llamo Jarvis..un placer conocerte" + inputName.value
 //     outputText.innerHTML=saludoCompleto
 //     }
 //     else{
@@ -161,44 +162,44 @@
 // }
 
 
-//encontrar el numero mayor:
+// //encontrar el numero mayor:
 
-function numeroMayor(numero1, numero2, numero3, numero4){
-    if (numero1>numero2 & numero1>numero3 & numero1>numero4)
-        return "El número " + numero1 + " es el mayor de los 4 números ingresados"
-    else if(numero2>numero1 & numero2>numero3 & numero2>numero4)
-        return "El número " + numero2 + " es el mayor de los 4 números ingresados"
-    else if(numero3>numero1 & numero3>numero2 & numero3>numero4)
-        return "El número " + numero3 + " es el mayor de los 4 números ingresados"
-    else(numero4>numero1 & numero4>numero2 & numero4>numero3)
-    return"El número " + numero4 + " es el mayor de los 4 números ingresados"
-}
-let numeros=numeroMayor(33,26,0,75)
-    console.log(numeros)
+// function numeroMayor(numero1, numero2, numero3, numero4){
+//     if (numero1>numero2 & numero1>numero3 & numero1>numero4)
+//         return "El número " + numero1 + " es el mayor de los 4 números ingresados"
+//     else if(numero2>numero1 & numero2>numero3 & numero2>numero4)
+//         return "El número " + numero2 + " es el mayor de los 4 números ingresados"
+//     else if(numero3>numero1 & numero3>numero2 & numero3>numero4)
+//         return "El número " + numero3 + " es el mayor de los 4 números ingresados"
+//     else(numero4>numero1 & numero4>numero2 & numero4>numero3)
+//     return"El número " + numero4 + " es el mayor de los 4 números ingresados"
+// }
+// let numeros=numeroMayor(33,26,0,75)
+//     console.log(numeros)
 
-//encontrar el numero menor:
+// //encontrar el numero menor:
 
-function numeroMenor(numero1, numero2, numero3, numero4){
-        if (numero1<numero2 & numero1<numero3 & numero1<numero4)
-            return "El número " + numero1 + " es el menor de los 4 números ingresados"
-        else if(numero2<numero1 & numero2<numero3 & numero2<numero4)
-            return "El número " + numero2 + " es el menor de los 4 números ingresados"
-        else if(numero3<numero1 & numero3<numero1 & numero3<numero4)
-            return "El número " + numero3 + " es el menor de los 4 números ingresados"
-        else(numero4<numero1 & numero4<numero2 & numero4<numero3)
-        return"El número " + numero4 + " es el menor de los 4 números ingresados"
-    }
-    let numero=numeroMenor(33,26,0,75)
-        console.log(numero)
+// function numeroMenor(numero1, numero2, numero3, numero4){
+//         if (numero1<numero2 & numero1<numero3 & numero1<numero4)
+//             return "El número " + numero1 + " es el menor de los 4 números ingresados"
+//         else if(numero2<numero1 & numero2<numero3 & numero2<numero4)
+//             return "El número " + numero2 + " es el menor de los 4 números ingresados"
+//         else if(numero3<numero1 & numero3<numero1 & numero3<numero4)
+//             return "El número " + numero3 + " es el menor de los 4 números ingresados"
+//         else(numero4<numero1 & numero4<numero2 & numero4<numero3)
+//         return"El número " + numero4 + " es el menor de los 4 números ingresados"
+//     }
+//     let numero=numeroMenor(33,26,0,75)
+//         console.log(numero)
 
-//Definir si un numero es par o impar:
+// //Definir si un numero es par o impar:
 
-        function numParImpar(num){
-            if (num % 2 ===0){
-                return "El número " + num + " es par"
-        }
-            else{
-                return "El número " + num + " es impar"
-            }
-        }
-        console.log(numParImpar(8))
+        // function numParImpar(num){
+        //     if (num % 2 ===0){
+        //         return "El número " + num + " es par"
+        // }
+        //     else{
+        //         return "El número " + num + " es impar"
+        //     }
+        // }
+        // console.log(numParImpar(30))

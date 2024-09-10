@@ -1,67 +1,33 @@
-/* color primario: #ED21D0
-color secundario: #EF3721
-color terciario: #ED2156
-color cuarto: #BA21ED */
-*{text-decoration: none;
-list-style-type: none;
+*{
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+
 }
-/* body{
-    background-color: rgba(127, 255, 212, 0.534);
-} */
-/* .fondo{background-attachment: fixed; background-position: center; background-size: contain;} */
 .logo{
     width: 30px;
-    height: 30px;}
-/* h1{ 
-    padding: 1px; 
-    margin-bottom: 5px;
-    color: #ED21D0;
-} */
-/* h2{ 
-    text-decoration: underline;
-    color: #EF3721;} */
-h3{ 
-    /* color: blueviolet;  */
-    font-family: brodway; 
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 7px; 
+    height: 30px;
+    border: 1px solid black;
 }
-.titulo{
-    color: black;
+h3{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 0.5em;
+    
 }
 .subtitulo{
     text-align: center;
-    background-color: #010611;
+    background-color: rgba(7, 29, 49, 0.788);
     color: white;
     padding: 1.2em .5em;
     border: 1px solid grey;
     border-radius: 10px;
     margin: 10px;
     text-align: center;
-    width: 80%;
 }
-.subtitulo2{
-    text-align: center;
-    background-color: #010611;
-    color: white;
-    padding: 1.2em .5em;
-    border: 1px solid grey;
-    border-radius: 10px;
-    margin: 0;
-    text-align: center;
-}
-.menu{ 
-    /* background-image: url(..//img/herramientas.jpg); background-size: cover; */
-    background-position: top;
-
-    width: 100%;
+.menu{
     height: 20%;
-    padding: 20px;
-    /* border: 2px solid rgb(149, 132, 132); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -74,26 +40,28 @@ h3{
 .menu a{ color: black;
 }
 .menu li{
-    font-size: 30px; 
+    font-size: 28px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: 2px black solid;
-    padding-right: 10px;
-    border-radius: 10px;
-    margin: 5px;
+    /* border: 2px black solid; */
+    /* margin: 5px; */
     height: 30px;
+    border-bottom: 1px solid black;
+    margin: 3px;
 }
 .formulario{ 
     font-size: 15px; 
     color: white; 
     font-family: brodway; 
-    background-color: black;
+    background-color: rgba(7, 29, 49, 0.788);
     /* border: 2px black solid;  */
     padding: 1em; 
     margin: 10px;
-    width: 100%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    }
+.formulario label{
+        font-size: 21px;
     }
 .formulario input{
     width: 200px;
@@ -102,13 +70,13 @@ h3{
     width: 200px;
 }
 .contame{ 
+    /* font-size: 21px; */
     /* border: 2px black solid ;  */
     color: white;
-    width: 100%;
     padding: 1em;
     border-radius: 10px;
     margin: 10px;
-    background-color: black
+    background-color: rgba(7, 29, 49, 0.788);
 }
 .contame select{ 
     margin: 5px;
@@ -119,17 +87,13 @@ h3{
 .contame textarea{margin-bottom: 5px;
 }
 .texto{
-    background-color: #010611;
+    background-color: rgba(7, 29, 49, 0.788);
     color: white;
-    width: 80%;
     padding: 1em;
     /* border: 1px solid grey; */
     border-radius: 10px;
     margin: 10px;
     overflow: hidden;
-}
-.texto li{
-    list-style-type: none;
 }
 .texto:hover img{
     scale: 1.15;
@@ -138,24 +102,29 @@ h3{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.footer{margin-right: 150px;}
 .pie{
     display: grid;
     justify-content: center;
     text-align: center;
-    padding: 20px;
-    background-color: black;
+    padding: 1em;
+    background-color: rgba(7, 29, 49, 0.788);
     color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.titulo-pie{
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 .grid{
     display: grid;
-    gap: 10px;
     grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
 }
 .item{
+    width: 100px;
     background-color: white;
-    padding: 20px;
+    padding: 0px;
     border-radius: 10px;
     color: black;
     margin: 5px;
@@ -176,13 +145,20 @@ h3{
 }
 .clima{
     background-color: #EF3721;
-    width: 100%;
     padding: 1em;
     /* border: 1px solid grey; */
     border-radius: 10px;
     margin: 10px;
     font-size: 1.5em;
     text-align: center;
+}
+.clima a{
+    color: black;
+    font-family: brodway; 
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    
 }
 .cuerpo{
     display: grid;
@@ -214,48 +190,65 @@ h3{
         box-shadow: 10px 10px 10px red inset;
     }
 @media (min-width: 992px){
-    .menu{
-        height: 120px;
-        font-size: 20px;
-    }
     .titulo{color: #010611;}
-    .menu li{ padding-top: 35px;}
+    /* .menu li{ padding-top: 35px;} */
     .cuerpo{
         grid-template-columns: 1fr 1fr 1fr;
     }
     .cuerpo2{
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .contame{
-        width: 100%;
-    }
-    .formulario{
-        width: 100%;
-    }
-    .clima{
-        width: 100%;
-    }
     .subtitulo{
-        grid-column-start: 1;
-        grid-column-end: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center
     }
-    .subtitulo2{
-        grid-column-start: 1;
-        grid-column-end: 2;
+    .formulario label{
+        font-size: 21px;
     }
     .pie{
-        grid-template-columns: 1fr 1fr 1fr;
+        height: 185px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
     .social-icons{
+        display: grid;
+        justify-content: center;
         grid-column: 1/2;
         grid-row: 2/3;
         width: 35%;
-        margin-left: 150px;
+        margin-left: 175px;
+    }
+    .grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: space-around;
+    }
+}
+@media (min-width:1250px){
+    .formulario{
+        display: grid;
+        gap: 1em;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .formulario label{
+        font-size: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .formulario input{
+        height: 35px;
     }
 }
 
-.ejemploAnim{
+
+
+/* .ejemploAnim{
     max-width: 400px;
     background-color: #000052;
     color: white;
@@ -266,4 +259,4 @@ h3{
 .bg-color{
     background-color: greenyellow;
     color: black;
-}
+} */
