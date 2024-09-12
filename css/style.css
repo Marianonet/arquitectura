@@ -196,7 +196,7 @@
     border-radius: 10px;
     transition: 1s scale;
 }
-.texto:hover{
+/* .texto:hover{
     background-color: gray;
     color: rgb(15, 1, 1);
     cursor: pointer;
@@ -211,7 +211,7 @@
         transition: 2000ms;
         transition-property: all;
         box-shadow: 10px 10px 10px red inset;
-    }
+    } */
 @media (min-width: 992px){
     .cuerpo{
         grid-template-columns: 1fr 1fr 1fr;
