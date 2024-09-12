@@ -34,11 +34,15 @@
     font-size: 28px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 30px;
-    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
     margin: 3px;
 }
 .escrito{
     margin: 3px 3px;
+}
+.ordenado{
+    text-align: left;
 }
 .formulario{ 
     font-size: 15px; 
