@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obras Terminadas</title>
+    <title>Superficie</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -21,13 +21,15 @@
     </header>
     <main>
         <div class="cuerpo">
-            <h2 class="subtitulo">Un Poco de Nosotros</h2>
-            <section class="texto">
-                <p class="escrito">
-                <h3>Somos una sociedad de arquitectos reconocidos en la cuidad y alrededores</h3>
-                </p>
-                <img src="./img/herramientas.jpg" alt="herramientas" class="imagenes">
-            </section>
+        <h2 class="subtitulo">Calcula la Superficie de tu terreno</h2>
+        <article class="texto">
+                <h3>Ingresa el frente que tiene el terreno</h3>
+                <input type="number" id="inp-frente">
+                <h3>Ingresa el largo total del terreno</h3>
+                <input type="number" id="inp-largo"><br>
+                <button onclick="calcularSuperficie()">Calcular Superficie</button>
+                <div  class="boton" id="output"></div>
+        </article>
         </div>
     </main>
     <footer>
@@ -39,9 +41,11 @@
                 <div class="grid">
                     <div class="item">
                         <a href="https://github.com/Marianonet/arquitectura" target="_blank"><img src="./iconos/github.png" alt="github"></a>
+                        <p>github.com/</p>
                     </div>
                     <div class="item item-2">
                         <a href="mailto:arq.t&t@arquitectura.com.ar"><img src="./iconos/mail.png" alt="email"></a>
+                        <p>t&t@arq.com</p>
                     </div>
                 </div>
                 <div class="social-icons">
@@ -52,5 +56,6 @@
                 </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

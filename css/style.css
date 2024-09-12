@@ -7,18 +7,8 @@
 .logo{
     width: 30px;
     height: 30px;
-    border: 1px solid black;
-}
-h3{
-    /* display: flex;
-    justify-content: left;
-    align-items: center;
-    padding: 0.5em; */
-    width: 80%;
-    height: 30px;
 }
 .subtitulo{
-    text-align: center;
     background-color: rgba(7, 29, 49, 0.788);
     color: white;
     padding: 1.2em .5em;
@@ -43,18 +33,18 @@ h3{
 .menu li{
     font-size: 28px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* border: 2px black solid; */
-    /* margin: 5px; */
     height: 30px;
-    border-bottom: 1px solid black;
+    border-left: 1px solid black;
     margin: 3px;
+}
+.escrito{
+    margin: 3px 3px;
 }
 .formulario{ 
     font-size: 15px; 
     color: white; 
     font-family: brodway; 
     background-color: rgba(7, 29, 49, 0.788);
-    /* border: 2px black solid;  */
     padding: 1em; 
     margin: 10px;
     border-radius: 10px;
@@ -92,8 +82,15 @@ h3{
     color: #010611; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.contame label{
+    width: 80%;
+}
 .contame textarea{
     width: 80%;
+}
+.boton{
+    width: 80%;
+    height: 30px;
 }
 #enviar-datos{
     width: 80%;
@@ -108,11 +105,22 @@ h3{
     overflow: hidden;
 }
 .texto:hover img{
-    scale: 1.15;
+    scale: 1.1;
 }
 .imagen{width: 100px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.respuesta{
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+.calculo-sup input{
+    width: 80%;
+    height: 30px;
 }
 .pie{
     display: grid;
@@ -156,7 +164,7 @@ h3{
     height: 40px;
 }
 .clima{
-    background-color: #EF3721;
+    background-color: rgba(7, 29, 49, 0.788);
     padding: 1em;
     /* border: 1px solid grey; */
     border-radius: 10px;
@@ -170,7 +178,6 @@ h3{
     font-size: 25px;
     margin-top: 10px;
     margin-bottom: 7px;
-    
 }
 .cuerpo{
     display: grid;
@@ -202,8 +209,6 @@ h3{
         box-shadow: 10px 10px 10px red inset;
     }
 @media (min-width: 992px){
-    .titulo{color: #010611;}
-    /* .menu li{ padding-top: 35px;} */
     .cuerpo{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -214,7 +219,8 @@ h3{
     .subtitulo{
         display: flex;
         justify-content: center;
-        align-items: center
+        align-items: center;
+        font-size: 2.5em;
     }
     .formulario label{
         font-size: 21px;
@@ -240,6 +246,9 @@ h3{
     }
 }
 @media (min-width:1250px){
+    .subtitulo{
+        font-size: 3em;
+    }
     .formulario{
         display: grid;
         gap: 1em;
@@ -250,6 +259,7 @@ h3{
     .formulario label{
         font-size: 21px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center
     }
@@ -257,7 +267,6 @@ h3{
         height: 35px;
     }
 }
-
 
 
 /* .ejemploAnim{
