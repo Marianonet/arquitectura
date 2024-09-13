@@ -1,8 +1,7 @@
 *{
     text-decoration: none;
     list-style-type: none;
-    box-sizing: border-box;
-
+    /* box-sizing: border-box; */
 }
 .logo{
     width: 30px;
@@ -12,7 +11,7 @@
     background-color: rgba(7, 29, 49, 0.788);
     color: white;
     padding: 1.2em .5em;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     border-radius: 10px;
     margin: 10px;
     text-align: center;
@@ -46,7 +45,7 @@
 }
 .formulario{ 
     font-size: 15px; 
-    color: white; 
+    color: white;
     font-family: brodway; 
     background-color: rgba(7, 29, 49, 0.788);
     padding: 1em; 
@@ -58,6 +57,7 @@
     }
 .formulario label{
         font-size: 21px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 .formulario input{
     width: 80%;
@@ -78,11 +78,10 @@
     background-color: rgba(7, 29, 49, 0.788);
     
 }
-.contame select{ 
+.contame select{
     width: 80%;
     height: 30px;
-    margin: 5px;
-    font-size: 15px; 
+    font-size: 21px; 
     color: #010611; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -91,6 +90,10 @@
 }
 .contame textarea{
     width: 80%;
+}
+.contame h3{
+    font-size: 21px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .boton{
     width: 80%;
@@ -111,20 +114,29 @@
 .texto:hover img{
     scale: 1.1;
 }
+.texto input{
+    height: 30px;
+    width: 80%;
+}
 .imagen{width: 100px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 .respuesta{
+    margin-top: 10px;
+    margin-left: 45px;
     width: 80%;
     height: 30px;
-    background-color: white;
-    color: black;
+    color: white;
+    text-align: center;
     font-size: 15px;
 }
 .calculo-sup input{
     width: 80%;
     height: 30px;
+}
+.button{
+    margin-top: 50px;
 }
 .pie{
     display: grid;
@@ -196,22 +208,6 @@
     border-radius: 10px;
     transition: 1s scale;
 }
-/* .texto:hover{
-    background-color: gray;
-    color: rgb(15, 1, 1);
-    cursor: pointer;
-    transition: 2000ms;
-    transition-property: all;
-    box-shadow: -10px 10px 10px black;
-}
-.clima:hover{
-        background-color: gray;
-        color: rgb(15, 1, 1);
-        cursor: pointer;
-        transition: 2000ms;
-        transition-property: all;
-        box-shadow: 10px 10px 10px red inset;
-    } */
 @media (min-width: 992px){
     .cuerpo{
         grid-template-columns: 1fr 1fr 1fr;
@@ -221,9 +217,7 @@
         grid-template-columns: 1fr 1fr;
     }
     .subtitulo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         font-size: 2.5em;
     }
     .formulario label{
@@ -252,6 +246,7 @@
 @media (min-width:1250px){
     .subtitulo{
         font-size: 3em;
+        text-align: center;
     }
     .formulario{
         display: grid;
@@ -262,26 +257,16 @@
     }
     .formulario label{
         font-size: 21px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
     }
     .formulario input{
         height: 35px;
     }
+    .contame{
+        font-size: 21px;
+        display: grid;
+        gap: 1em;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 }
-
-
-/* .ejemploAnim{
-    max-width: 400px;
-    background-color: #000052;
-    color: white;
-    padding: 1.5em;
-    font-size: 2em;
-    transition: 1s;
-}
-.bg-color{
-    background-color: greenyellow;
-    color: black;
-} */
